@@ -6,6 +6,12 @@ get '/' => sub {
   $c->render(template => 'index');
 };
 
+# 以下の4行を追加
+get '/profile' => sub {             # get関数の最初の引数が
+  my $c = shift;                    # /profile となっている
+  $c->render(template => 'index');
+};
+
 app->start;
 __DATA__
 
