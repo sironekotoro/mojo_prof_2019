@@ -19,11 +19,13 @@ __DATA__
 % layout 'default';
 % title 'Welcome';
 <h1>Welcome to the Mojolicious real-time web framework!</h1>
-<!-- <h1>タグの下に以下の4行を追加する -->
+<!-- 練習問題用プロフィールページ -->
 @@ profile.html.ep
 % layout 'default';
-% title 'ぷろふぃーる';
+% title 'profile';
 <h1>プロフィール</h1>
+<p>私の名前は<%= $name %>です。</p>
+<p>趣味は<%= $hobby %>で、好きなプログラミング言語は<%= $lang %>です。</p>
 
 @@ layouts/default.html.ep
 <!DOCTYPE html>
